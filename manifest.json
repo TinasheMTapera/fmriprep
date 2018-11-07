@@ -6,10 +6,10 @@
   "cite": "Esteban O, Blair R, Markiewicz CJ, Berleant SL, Moodie C, Ma F, Isik AI, Erramuzpe A, Kent JD, Goncalves M, Poldrack RA, Gorgolewski KJ; poldracklab/fmriprep: 1.0.0-rc9. Zenodo; 2017. doi:10.5281/zenodo.1041020  FOR MORE INFORMATION SEE: http://fmriprep.readthedocs.io/en/stable/citing.html.",
   "maintainer": "Flywheel <support@flywheel.io>",
   "source": "https://github.com/flywheel-apps/fmriprep",
-  "url": "https://fmriprep.readthedocs.io/en/1.1.4/",
-  "version": "5.5.0_1.1.4",
+  "url": "https://fmriprep.readthedocs.io/en/1.2.1/",
+  "version": "5.5.1_1.2.1",
   "custom": {
-    "docker-image": "flywheel/fmriprep:5.5.0_1.1.4"
+    "docker-image": "flywheel/fmriprep:5.5.1_1.2.1"
   },
   "license": "Other",
   "inputs": {
