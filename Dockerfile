@@ -5,7 +5,7 @@
 FROM poldracklab/fmriprep:1.2.5
 MAINTAINER Flywheel <support@flywheel.io>
 
-ENV FMRIPREP_VERSION 1.1.2
+ENV FMRIPREP_VERSION 1.2.5
 
 
 ############################
