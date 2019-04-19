@@ -15,23 +15,7 @@ BIDS_VALIDATOR_PATH = '/usr/bin/bids-validator'
 
 def validate_bids(dirname):
     """ """
-    if os.path.isfile(BIDS_VALIDATOR_PATH):
-        logger.info('Validating BIDS directory')
-
-        cmd = [BIDS_VALIDATOR_PATH, dirname]
-        proc = subprocess.Popen(cmd,
-                                #cwd=dirname,
-                                stdout=subprocess.PIPE,
-                                stderr=subprocess.PIPE)
-        stdout, stderr = proc.communicate()
-        returncode = proc.returncode
-
-        # TODO: Determine if an error should be raised or just a warning
-        logger.info('returncode: %d' % returncode)
-        logger.info('stderr: ' + stderr)
-        logger.info('stdout: ' + stdout)
-    else:
-        logger.warn('Skipping validation, validator is not present')
+    logger.warn('Skipping validation, validator is not present')
 
 def validate_project_label(fw, project_label):
     """ """
@@ -268,4 +252,3 @@ class RunCounterMap:
 
     def __contains__(self, key):
         return True
-
