@@ -7,8 +7,8 @@ import shutil
 import flywheel
 from flywheel_bids import export_bids
 
-from create_archive_funcs import get_flywheel_hierarchy, determine_fmap_intendedfor, create_bids_hierarchy
-
+from create_archive_funcs import (get_flywheel_hierarchy, determine_fmap_intendedfor,
+                                  create_bids_hierarchy)
 
 
 def create_and_download_bids(fw, rootdir, flywheel_basedir, analysis_id):
@@ -24,7 +24,9 @@ def create_and_download_bids(fw, rootdir, flywheel_basedir, analysis_id):
 
     ### Create bids hierarchy
     print("Create BIDS Hierarchy")
-    bids_hierarchy, files_lookup = create_bids_hierarchy(flywheel_hierarchy, fmaps_intendedfor)
+    fmaps_intendedfor = {}
+    bids_hierarchy, files_lookup = create_bids_hierarchy(flywheel_hierarchy,
+                                                         fmaps_intendedfor)
     # Print out BIDS hierarchy (for logs)
     pprint.pprint(bids_hierarchy)
 
