@@ -135,7 +135,7 @@ if __name__ == '__main__':
             export_bids.export_bids(fw, rootdir, None, container_type=container_type, container_id=container_id)
             if BIDS_metadata != 'NA':
                 if container_type == 'session':
-                    download_optional_inputs(flywheel_basedir, "sub-{}".format(BIDS_metadata.get('Subject')), "ses-{}".format(BIDS_metadata.get('Label')))
+                    download_optional_inputs(flywheel_basedir, "sub-{}".format(BIDS_metadata.get('Subject')), "ses-{}".format(BIDS_metadata.get('label')))
             else:
                 print('BIDS Curation was not valid, cannot use additional files.')
 

@@ -258,7 +258,7 @@ ls -R ${BIDS_DIR}
 
 ################################################################################
 # RUN FMRIPREP
-
+export NODE_OPTIONS="--max-old-space-size=4096"
 time /usr/local/miniconda/bin/fmriprep \
       ${BIDS_DIR} \
       ${FMRIPREP_OUTPUT_DIR} \
