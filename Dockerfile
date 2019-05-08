@@ -20,6 +20,7 @@ RUN apt-get update && apt-get -y install \
 ############################
 # Install the Flywheel SDK
 RUN pip install 'flywheel-sdk==6.0.6'
+RUN pip install fw-heudiconv
 
 ############################
 # Install the Flywheel BIDS client
@@ -46,8 +47,9 @@ COPY bids-client /bids-client
 RUN cd /bids-client \
   && cd /bids-client \
   && pip install .
-COPY create_archive.py /flywheel/v0/create_archive.py
-COPY create_archive_funcs.py /flywheel/v0/create_archive_funcs.py
+COPY create_archive_fw_heudiconv.py /flywheel/v0/create_archive_fw_heudiconv.py
+# COPY create_archive.py /flywheel/v0/create_archive.py
+# COPY create_archive_funcs.py /flywheel/v0/create_archive_funcs.py
 RUN chmod +x ${FLYWHEEL}/*
 
 
