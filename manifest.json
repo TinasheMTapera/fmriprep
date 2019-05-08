@@ -12,7 +12,15 @@
   "custom": {
     "gear-builder": {
       "category": "analysis",
+<<<<<<< HEAD
       "image": "pennbbl/fmriprep:0.1.9_1.2.5"
+=======
+<<<<<<< HEAD
+      "image": "pennbbl/fmriprep:0.1.9_1.2.5"
+=======
+      "image": "fmriprep_fwheudiconv_testing:latest"
+>>>>>>> f7433b09c8f93f032719fd5289e2806716eb050f
+>>>>>>> 29f89f93164203d420a97d08b840f668e19bf311
     },
     "flywheel":{"suite": "PennBBL"}
   },
