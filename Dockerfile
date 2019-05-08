@@ -21,10 +21,7 @@ RUN apt-get update && apt-get -y install \
 # Install the Flywheel SDK
 RUN pip install 'flywheel-sdk==6.0.6'
 RUN pip install fw-heudiconv
-
-############################
-# Install the Flywheel BIDS client
-# RUN pip install flywheel_bids
+RUN pip install heudiconv
 
 ############################
 # Make directory for flywheel spec (v0)
